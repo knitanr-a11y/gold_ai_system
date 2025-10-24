@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gold-ai-system"
+version = "0.1.0"
+description = "Automated trading signal system for gold FX"
+readme = "README.md"
+authors = [{ name = "Gold AI System" }]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+stage1 = [
+    "lightgbm>=4.0",
+    "catboost>=1.2",
+]
+stage2 = [
+    "torch>=2.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
