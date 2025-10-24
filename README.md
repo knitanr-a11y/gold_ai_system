@@ -35,6 +35,7 @@ Webhook URL の設定方法や実行手順は `docs/setup_ja.md` に詳しく記
 - `.env` は秘密情報を含むためコミットしません（`.gitignore` 済み）。`.env.example` はテンプレートなのでコミット対象です。
 - `scripts/` 以下のテンプレートをコピーして作った自分専用スクリプト（例: `scripts/run_cli_cmd.bat`）は `.gitignore` 済みです。
 - それ以外のソースコード、ドキュメント、設定ファイルは変更内容を確認したうえで通常どおりコミットしてください。
+- GitHub Desktop でのコミット／プッシュ手順と Push できない場合の対処は [`docs/setup_ja.md`](docs/setup_ja.md) の「GitHub Desktop でコミット／プッシュする場合」を参照してください。
 
 ## Running the placeholder CLI
 
